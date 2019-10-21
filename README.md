@@ -78,7 +78,7 @@ kubectl port-forward consul-0 8500:8500
 
 Visit http://127.0.0.1:8500 in your web browser.
 
-![Image of Consul UI](images/consul-ui.png)
+![Image of Consul UI](images/consul-ui.jpg)
 
 ## Cleanup
 
