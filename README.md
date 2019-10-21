@@ -24,7 +24,7 @@ The following clients must be installed on the machine used to follow this tutor
 
 ## Usage
 
-Clone this repo:
+Run the script:
 
 ```
 kubectl create -f https://raw.githubusercontent.com/AsCat/consul-dev-on-kubernetes/master/consul-dev.yaml
