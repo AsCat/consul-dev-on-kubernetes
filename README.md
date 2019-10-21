@@ -58,16 +58,6 @@ Forwarding from 127.0.0.1:8500 -> 8500
 Forwarding from [::1]:8500 -> 8500
 ```
 
-Run the `consul members` command to view the status of each cluster member.
-
-```
-consul members
-```
-```
-Node      Address          Status  Type    Build     Protocol  DC   Segment
-consul-0  10.32.2.8:8301   alive   server  1.4.0rc1  2         dc1  <all>
-```
-
 ### Accessing the Web UI
 
 The Consul UI does not support any form of authentication out of the box so it should not be exposed. To access the web UI, start a port-forward session to the `consul-0` Pod in a new terminal.
@@ -82,8 +72,8 @@ Visit http://127.0.0.1:8500 in your web browser.
 
 ## Cleanup
 
-Run the `cleanup` script to remove the Kubernetes resources created during this tutorial:
+Run the `kubectl delete` to remove the Kubernetes resources created during this tutorial:
 
 ```
-bash cleanup
+kubectl delete -f https://raw.githubusercontent.com/AsCat/consul-dev-on-kubernetes/master/consul-dev.yaml
 ```
